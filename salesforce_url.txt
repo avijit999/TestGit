@@ -1,0 +1,46 @@
+EXPLIAN PLAN
+SET STATEMENT_ID = 'STMT001'
+FOR
+SELECT FNAME, LNAME, DNAME, SALARY FROM EMPLOYEE E, DEPARTMENT D
+WHERE E.DNO = D.DNUMBER 
+AND SSN = 333445555;
+
+
+
+Salesforce Interview Questions
+------------------------------
+http://www.salesforce-interviewquestions.com/p/interview-questions.html
+
+https://www.jitendrazaa.com/blog/tag/interview-questions/page/2/
+
+http://www.sfdc99.com/2014/12/18/common-interview-questions-for-salesforce-developers/
+
+http://theblogreaders.com/salesforce-interview-questions-and-answer/sfdc-developer-interview-question-and-answer-part-1/#.VysOQIR97IU
+
+https://techjobs.sulekha.com/interview-questions-answers/salesforce
+
+https://techjobs.sulekha.com/interview-questions-answers/salesforce-administration
+
+https://howtodoitinsalesforce.blogspot.in/2017/02/salesforce-interview-questions-part-1.html
+
+http://anupkabra.blogspot.com/2017/08/frequently-asked-salesforce-interview.html
+
+http://anupkabra.blogspot.com/2017/08/frequently-asked-salesforce-interview_7.html
+
+http://anupkabra.blogspot.com/2017/08/frequently-asked-salesforce-interview_29.html
+
+http://www.salesforceadda.com/p/interview-questions.html
+
+
+Record Types
+-------------
+Sample Scenario:
+Support Representatives create cases based on the customer reported problems in Case Object.
+If the requirement is to fill the different set of fields for the different case types you can create record types and for each record type you can assign a different page layout by including a different set of fields.
+After creating the multiple record types, if you click on New case button you will see an intermediate screen where you can choose the type of record type based on that it will show the corresponding page layout.
+If you are displaying same picklist field in multiple record types and requirement is to show different picklist values based on the record type then you can configure in record type detail page.
+For the following objects, you can see the additional step to create the record type -
+Lead --> To control Lead Status field picklist values you need to create Lead process additionally to control the picklist values of Lead Status which will decide the lead life cycle.
+Opportunity --> To control Stage field picklist values you need to create Sales Process additionally to control the picklist values of Stage which will decide the Opportunity life cycle.
+Case --> To control Status field picklist values you need to create Support Process additionally to control the picklist values of Status which will decide the Case life cycle.
+Solution --> To control Status you need to create Solution Process additionally to control the picklist values of Status which will decide the Solution life cycle.
